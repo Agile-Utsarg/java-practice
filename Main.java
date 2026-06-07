@@ -1,19 +1,20 @@
 void main() {
-        //System.out.println("hello");
+        //PATTERN Question
         // Square Pattern
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt(); // no of rows
-        //outer
-        /*
+        //squre pattern
+       /*
         for (int i = 1; i <= n; i++) {
                 for (int j = 1; j <= n; j++) {
                         System.out.print("*");
                 }
                 System.out.println();
         }
-         */
+
+        */
        /*
-       //right triangle patteren
+       //right triangle pattern
         for(int i = 1; i <= n; i++){
                 for(int j = 1; j<= i; j++){
                         System.out.print("*");
@@ -22,8 +23,10 @@ void main() {
         }
 
         */
+
+
         //inverted triangle
-        /*
+       /*
         for(int i = n; i>=1; i--){
                 for(int j = 1; j <= i; j++){
                         System.out.print("*");
@@ -31,17 +34,19 @@ void main() {
                 System.out.println();
         }
 
-         */
+        */
+
+
         //lift triangle
-        /*
+       /*
         int sp = n-1;
         int str = 1;
         for(int i = 1; i <= n; i++){
                 for(int j = 1; j <= sp; j++){
                         System.out.print("\t");
                 }
-                for(int j = n; j <= str; j++){
-                        System.out.print("*");
+                for(int j = 1; j <= str; j++){
+                        System.out.print("*\t");
                 }
                 sp--;
                 str++;
@@ -49,9 +54,9 @@ void main() {
 
         }
 
+        */
 
-         */
-        /*
+/*
         int sp =0;
         int str = n;
         for(int i = 1; i <= n; i++){
@@ -67,8 +72,11 @@ void main() {
                 str--;
                 System.out.println();
            }
-         */
+
+ */
+
      //diamond pattern
+        /*
         int sp = n/2;
         int str = 1;
         for(int i = 1; i <= n; i++){
@@ -84,6 +92,106 @@ void main() {
                 }else{
                         sp++;
                         str-=2;
+                }
+                System.out.println();
+
+
+        }
+
+         */
+        //Number pattern
+        /*
+        for(int i = 1; i<=n; i++){
+                for(int j = 1; j<=i; j++){
+                        System.out.print(j);
+                }
+                System.out.println();
+        }
+
+         */
+        //double vertical border pattern
+        /*
+        int str = n / 2 + 1;
+        int sp = 1;
+        for(int i=1; i <=n; i++){
+                for(int j=1; j<=str; j++){
+                        System.out.print("*\t");
+                }
+                for(int j=1; j<=sp; j++){
+                        System.out.print("\t");
+                }
+
+                for(int j=1; j<=str; j++){
+                        System.out.print("*\t");
+                }
+                if(i <= n/2){
+                        str--;
+                        sp+=2;
+                }
+                else{
+                        str++;
+                        sp-=2;
+                }
+                System.out.println();
+        }
+
+         */
+        //Print diagonal Pattern
+        /*
+        for(int i = 1; i<= n; i++){
+                for(int j =1; j<=n; j++){
+                        if(i == j) {
+                                System.out.print("*\t");
+                        }
+                        else{
+                                System.out.print("\t");
+                        }
+                }
+                System.out.println();
+        }
+
+         */
+        //Reverse diagonal pattern
+        /*
+        for(int i =1; i<=n; i++){
+                for(int j =1; j<=n; j++){
+                        if(i + j == n+1){
+                                System.out.print("*\t");
+                        }
+                        else {
+                                System.out.print("\t");
+                        }
+                }
+                System.out.println();
+        }
+
+         */
+        //cross diagonal pattern
+        /*
+        for(int i =1; i <= n; i++){
+                for(int j = 1; j<=n; j++){
+                        if(i == j || i + j == n+1){
+                                System.out.print("*\t");
+                        }
+                        else {
+                                System.out.print("\t");
+                        }
+                }
+                System.out.println();
+        }
+         */
+//hollow diamaond
+        int os = n /2;
+        int is = -1;
+        for(int i =1; i<=n; i++){
+                System.out.print(os + ";" +is);
+                if(i <= n/2){
+                        os--;
+                        is+=2;
+                }
+                else {
+                        os++;
+                        is-=2;
                 }
                 System.out.println();
         }
