@@ -181,10 +181,20 @@ void main() {
         }
          */
 //hollow diamaond
+        /*
         int os = n /2;
         int is = -1;
         for(int i =1; i<=n; i++){
-                System.out.print(os + ";" +is);
+                for(int j=1; j<=os; j++){
+                        System.out.print("\t");
+                }
+                System.out.print("*\t");
+                for(int j=1; j<=is; j++){
+                        System.out.print("\t");
+                }
+                if(i>1 && i < n){
+                        System.out.print("*\t");
+                }
                 if(i <= n/2){
                         os--;
                         is+=2;
@@ -196,4 +206,51 @@ void main() {
                 System.out.println();
         }
 
+         */
+        //increasing oder series(sequence)
+        /*
+        int val = 1;
+        for(int i =1; i<=n; i++){
+                for(int j=1; j<=i; j++) {
+                        System.out.print(val + "\t");
+                        val++;
+                }
+                System.out.println();
+        }
+
+         */
+        //fibonacci pattern series
+        /*
+       int a =0;
+       int b =1;
+       for(int i=1; i<=n; i++){
+               for(int j=1; j<=i; j++){
+                       System.out.print(a + "\t");
+                       int c = a + b;
+                       a = b;
+                       b = c;
+               }
+            System.out.println();
+       }
+
+         */
+        //Pascal Pattern triangle(last)
+
+        for(int i = 1; i<=n; i++){
+                int val =1;
+                for(int j = 1; j<=i; j++){
+                        System.out.print(val + "\t");
+                        val = val*(i-j) / j;
+                }
+                System.out.println();
+        }
+
+
+        /*
+        for(int i = 1; i <= 10; i++){
+                int result = n * i;
+                System.out.println(n +" * "+ i + " = " + result);
+        }
+
+         */
 }
