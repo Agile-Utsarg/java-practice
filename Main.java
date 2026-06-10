@@ -237,7 +237,7 @@ void main() {
 
          */
         //Pascal Pattern triangle(last)
-
+/*
         for(int i = 1; i<=n; i++){
                 int val =1;
                 for(int j = 1; j<=i; j++){
@@ -246,8 +246,7 @@ void main() {
                 }
                 System.out.println();
         }
-
-
+ */
         /*
         for(int i = 1; i <= 10; i++){
                 int result = n * i;
