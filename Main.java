@@ -56,6 +56,8 @@ void main() {
 
         */
 
+
+
 /*
         int sp =0;
         int str = n;
@@ -76,7 +78,7 @@ void main() {
  */
 
      //diamond pattern
-        /*
+    /*
         int sp = n/2;
         int str = 1;
         for(int i = 1; i <= n; i++){
@@ -97,8 +99,8 @@ void main() {
 
 
         }
+     */
 
-         */
         //Number pattern
         /*
         for(int i = 1; i<=n; i++){
@@ -251,6 +253,5 @@ void main() {
                 int result = n * i;
                 System.out.println(n +" * "+ i + " = " + result);
         }
-
          */
 }
